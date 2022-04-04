@@ -28,8 +28,8 @@ HDR				= includes/cub3d.h
 SRC				=	srcs/main.c \
 					srcs/init.c \
 					srcs/pars.c \
-					srcs/pars_check_NSWE.c \
-					srcs/pars_check_FC.c \
+					srcs/pars_check_nswe.c \
+					srcs/pars_check_fc.c \
 					srcs/pars_map.c \
 					srcs/draw.c \
 					srcs/draw_raycasting.c \
