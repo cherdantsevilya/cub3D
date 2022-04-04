@@ -18,9 +18,6 @@ void	init_cub(t_all *all)
 	all->mlx.win = NULL;
 	all->mlx.img = NULL;
 	all->mlx.addr = NULL;
-	all->mlx.bpp = 0;
-	all->mlx.line_l = 0;
-	all->mlx.end = 0;
 	all->map.map = NULL;
 	all->map.height = 0;
 	all->map.north = NULL;

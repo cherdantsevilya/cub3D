@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/cub3D.h"
+#include "../includes/cub3d.h"
 
 void	check_position(t_all *all, int i, int j)
 {

@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/cub3D.h"
+#include "../includes/cub3d.h"
 
 void	free_all(t_all *all)
 {

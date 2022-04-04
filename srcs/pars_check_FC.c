@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../includes/cub3D.h"
+#include "../includes/cub3d.h"
 
 int	color_atoi(const char *str, t_all *all)
 {

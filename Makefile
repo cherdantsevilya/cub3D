@@ -45,6 +45,7 @@ all				: $(NAME)
 
 $(NAME)			: $(OBJ) $(LIB) $(MLX)
 				$(CC) $(CFLAGS) $(OBJ) $(LIB) $(MLX) $(FRAME) -o $(NAME)
+				printf "\x1b[1m\x1b[35m 👾 cub3D 👾 \x1b[22m\n"
 
 $(LIB)			:
 				make -C libft/
