@@ -23,7 +23,7 @@ FRAME			= -framework AppKit -framework OpenGL
 LIB				= libft/libft.a
 MLX				= mlx/libmlx.a
 
-HDR				= includes/cub3D.h
+HDR				= includes/cub3d.h
 
 SRC				=	srcs/main.c \
 					srcs/init.c \
