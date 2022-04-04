@@ -10,6 +10,8 @@
 #                                                                              #
 # **************************************************************************** #
 
+NAME = libft.a
+
 SRCS = ft_memset.c			\
 		ft_bzero.c			\
 		ft_abs.c			\
@@ -65,35 +67,24 @@ SRCSB =	ft_lstnew.c			\
 		ft_lstmap.c			\
 		$(SRCS)
 
-NAME = libft.a
+FLAGS = -Wall -Werror -Wextra
 
-OBJS_DIR = objs/
-OBJS = $(SRCS:.c=.o)
-OBJECTS_PREFIXED = $(addprefix $(OBJS_DIR), $(OBJS))
+OBJ = ${SRCS:.c=.o}
 
-OBJSB = $(SRCSB:.c=.o)
-OBJECTS_BONUS_PREFIXED = $(addprefix $(OBJS_DIR), $(OBJSB))
+all : $(NAME)
 
-CC = gcc
-CFLAGS = -Wall -Wextra -Werror
+$(NAME) : $(OBJ)
+	ar rcs $(NAME) $?
 
-all: $(NAME)
+%.o : %.c
+	gcc $(FLAGS) -c $< -o $@
 
-$(OBJS_DIR)%.o : %.c libft.h
-	@mkdir -p $(OBJS_DIR)
-	@$(CC) $(CFLAGS) -c $< -o $@
+clean :
+	rm -f $(OBJ)
 
-$(NAME): $(OBJECTS_PREFIXED)
-	@ar -r $(NAME) $(OBJECTS_PREFIXED)
+fclean : clean
+	rm -f $(NAME)
 
-clean:
-	@rm -rf $(OBJS_DIR)
+re : fclean all
 
-fclean: clean
-	@rm -f $(NAME)
-
-re: fclean all
-
-bonus: $(OBJECTS_BONUS_PREFIXED)
-	@ar r $(NAME) $(OBJECTS_BONUS_PREFIXED)
-	@echo "Libft Bonus Done !"
+.PHONY : all clean fclean re

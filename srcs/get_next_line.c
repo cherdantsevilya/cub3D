@@ -10,7 +10,7 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "get_next_line.h"
+#include "../includes/cub3D.h"
 
 void	*ft_gnl_memmove(void *dst, const void *src, size_t n)
 {

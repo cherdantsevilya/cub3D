@@ -24,7 +24,7 @@ void	check_cub_helper(t_all *all, char *line)
 		check_fc(all, line);
 	while (ft_isspace(line[n]))
 		n++;
-	if (line[n] == '1')
+	if (line[n] == '1' || line[n] == '0')
 		pars_map(all, line, n);
 }
 

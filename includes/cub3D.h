@@ -15,7 +15,6 @@
 
 # include <math.h>
 # include "../libft/libft.h"
-# include "../gnl/get_next_line.h"
 # include "../mlx/mlx.h"
 # include <fcntl.h>
 # include <unistd.h>
@@ -23,6 +22,10 @@
 # include <stdlib.h>
 # include <errno.h>
 # include <string.h>
+
+# ifndef BUFFER_SIZE
+#  define BUFFER_SIZE 1024
+# endif
 
 # define WIDTH 640
 # define HEIGHT 480
@@ -168,5 +171,15 @@ void	key_hook_lr(int key, t_all *all);
 //*** utils.c ***///
 void	free_tmp(char **arr);
 void	free_all(t_all *all);
+
+//*** gnl ***///
+int		get_next_line(int fd, char **line);
+int		ft_find_i(const char *reminder, int c);
+int		ft_check_reminder(char *reminder, char **line, int i);
+void	*ft_gnl_memmove(void *dst, const void *src, size_t n);
+size_t	ft_gnl_strlen(const char *s);
+char	*ft_gnl_strdup(const char *s1);
+char	*ft_gnl_substr(char const *s, unsigned int start, size_t len);
+char	*ft_gnl_strjoin(char *s1, char *s2);
 
 #endif

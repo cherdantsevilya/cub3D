@@ -14,9 +14,10 @@
 
 void	check_position(t_all *all, int i, int j)
 {
-	if (i == 0 || all->map.map[i][j] == 0)
+	if (i == 0 || j == 0)
 		ft_error("Error: invalid map", all);
-	if (j == 0 || all->map.map[i + 1] == 0)
+	if (!(all->map.map[i - 1][j]) || !(all->map.map[i][j - 1])
+		|| !(all->map.map[i + 1][j]) || !(all->map.map[i][j + 1]))
 		ft_error("Error: invalid map", all);
 	if (all->map.map[i - 1][j] != '1' && all->map.map[i - 1][j] != '0')
 		ft_error("Error: invalid map", all);
