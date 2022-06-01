@@ -26,7 +26,7 @@ ___
 *My first RayCaster with miniLibX 💡*
 
 <p align="center">
-    <img src="https://github.com/cherdantsevilya/cub3D/blob/master/content/cub3d.gif" width="840" height="630">
+    <img src="https://github.com/cherdantsevilya/cub3D/blob/master/content/cub3d.gif" width="640" height="480">
 </p>
 
 ### Introduction
