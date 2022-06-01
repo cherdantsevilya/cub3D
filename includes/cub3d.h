@@ -27,8 +27,8 @@
 #  define BUFFER_SIZE 1024
 # endif
 
-# define WIDTH 640
-# define HEIGHT 480
+# define WIDTH 1280
+# define HEIGHT 960
 # define W 13
 # define A 0
 # define S 1
@@ -36,8 +36,8 @@
 # define ESC 53
 # define LEFT 123
 # define RIGHT 124
-# define SM 0.2
-# define SR 0.1
+# define SM 0.1
+# define SR 0.05
 
 typedef struct s_mlx
 {
