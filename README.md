@@ -4,23 +4,6 @@
 
 ___
 
-## :memo: **About**
-
-_This project is inspired by the world-famous eponymous 90's game, which was the first FPS ever. It will enable you to explore ray-casting. Your goal will be to make a dynamic view inside a maze, in which you'll have to find your way._
-
-### *Keywords*  
-> + Applicative
-
-### *Skills*
-> + Imperative programming
-> + Graphics
-> + Rigor
-> + Algorithms & AI
-
-For detailed information, refer to the [**subject of this project**](https://github.com/cherdantsevilya/cub3D/blob/master/content/en.subject%20(1).pdf).
-
-___
-
 ## 🚀 **Description**
 
 *My first RayCaster with miniLibX 💡*
@@ -89,6 +72,8 @@ Here is a summary of the various controls in the game:
 - The ``WASD`` keys move the player up, down, left and right relative to the player's viewing angle
 - The ``left`` and ``right`` arrow keys rotate the viewing angle of the player
 - Press the ``ESC`` key or the ``X`` button on the window to exit the game
+
+###### *For detailed information, refer to the [**subject of this project**](https://github.com/cherdantsevilya/cub3D/blob/master/content/en.subject%20(1).pdf).*
 
 ___
 
